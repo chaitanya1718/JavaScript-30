@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumkit</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="key-container">
+        <div data-key="a" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div data-key="s" class="key">
+            <kbd>S</kbd>
+            <span class="sound">Hit-Hat</span>
+        </div>
+        <div data-key="d" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Kick</span>
+        </div>
+        <div data-key="f" class="key">
+            <kbd>F</kbd>
+            <span class="sound">Open-hat</span>
+        </div>
+        <div data-key="g" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Boom</span>
+        </div>
+        <div data-key="h" class="key">
+            <kbd>H</kbd>
+            <span class="sound">Ride</span>
+        </div>
+        <div data-key="j" class="key">
+            <kbd>J</kbd>
+            <span class="sound">Snare</span>
+        </div>
+        <div data-key="k" class="key">
+            <kbd>K</kbd>
+            <span class="sound">Tom</span>
+        </div>
+        <div data-key="l" class="key">
+            <kbd>L</kbd>
+            <span class="sound">Tim</span>
+        </div>
+
+
+    </div>
+    <audio src="sounds/boom.mp3" data-key="g"></audio>
+    <audio src="sounds/clap.wav" data-key="a"></audio>
+    <audio src="sounds/guitar.wav" data-key="l"></audio>
+    <audio src="sounds/hat.wav" data-key="s"></audio>
+    <audio src="sounds/kick.wav" data-key="d"></audio>
+    <audio src="sounds/openhat.wav" data-key="f"></audio>
+    <audio src="sounds/ride.wav" data-key="h"></audio>
+    <audio src="sounds/snare.wav" data-key="j"></audio>
+    <audio src="sounds/tom.wav" data-key="k"></audio>
+</body>
+
+</html>

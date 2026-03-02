@@ -1,0 +1,23 @@
+# Node modules (ignore in all subprojects)
+
+**/node_modules/
+
+# Build folders
+
+**/dist/
+**/build/
+**/out/
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Env files
+
+.env
+.env.*

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+</head>
+<body>
+    <h2>Update css varibales with<span class="h1"> JS</span></h2>
+    <div class="control">
+        <label for="spacing">Spacing: </label>
+        <input type="range"name="spacing" min="10" max="200" value="10" data-sizing="px">
+        <label for="blur">Blur: </label>
+        <input type="range"name="blur" min="0" max="25" value="10" data-sizing="px">
+        <label for="base">Base color: </label>
+        <input type="color" name="base" value="#ffc600">
+
+    </div>
+    <img src="https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg" alt="virat">
+
+
+    <style>
+        :root{
+            --spacing:10px;
+            --base:#ffc600;
+            --blur:10px;
+
+        }
+        body{
+            text-align:center;
+
+        }
+        .control{
+            font-size:x-large;
+            margin-bottom: 20px;
+        }
+        img{
+            width:50vw;
+            background: var(--base);
+            filter:blur(var(--blur));
+            padding:var(--spacing);
+        }
+        .h1{
+            color:var(--base);
+        }
+    </style>
+
+    <script>
+        const inputs=document.querySelectorAll(".control input");
+
+        function updateValue(){
+            const suffix=this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
+        }
+
+        inputs.forEach((input)=>{
+            input.addEventListener('change',updateValue);
+            input.addEventListener('mousemove',updateValue);
+
+        })
+
+    </script>
+</body>
+</html>
