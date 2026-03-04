@@ -90,7 +90,8 @@ const oldestAsc=inventors.sort(function(a,b){
 
 console.log(oldestAsc);
 
-
+console.log(oldestAsc);
+console.log(links);
 // ⚠️search and filter based on 'de'
 
 const category=document.querySelector('.mw-category');
