@@ -91,19 +91,33 @@ const oldestAsc=inventors.sort(function(a,b){
 console.log(oldestAsc);
 
 console.log(oldestAsc);
-console.log(links);
+// console.log(links);
 // ⚠️search and filter based on 'de'
 
-const category=document.querySelector('.mw-category');
-const links=Array.from(category.querySelectorAll('a'));
+// const category=document.querySelector('.mw-category');
+// const links=Array.from(category.querySelectorAll('a'));
 
-const searchResults=links
-                    .map((link)=>(link.textContent))
-                    .filter((street)=>(
-                        street.includes('de')
-                    ));
+// const searchResults=links
+//                     .map((link)=>(link.textContent))
+//                     .filter((street)=>(
+//                         street.includes('de')
+//                     ));
 
 
-console.log(searchResults);
+// console.log(searchResults);
 
+
+// sort people alphabetically by last name
+const alpha =people.sort(function(lastone,nextone){
+  const [alast,afirst]=lastone.split(',');
+  const [blast,bfirst]=nextone.split(",");
+  if(alast>blast){
+    return 1;
+  }
+  else{
+    return -1;
+  }
+})
+
+console.log(alpha);
 
