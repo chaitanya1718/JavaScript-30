@@ -121,3 +121,16 @@ const alpha =people.sort(function(lastone,nextone){
 
 console.log(alpha);
 
+// reduce exercise
+const data=['car','car','truck','truck','bike','walk','car','van','bike','walk','car','truck'];
+
+const totalTransportation=data.reduce(function(obj,item){
+
+if(!obj[item]){
+  obj[item]=0;
+}
+obj[item]++;
+return obj;
+},{});
+
+console.log(totalTransportation);
