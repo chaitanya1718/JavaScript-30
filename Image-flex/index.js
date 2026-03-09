@@ -8,6 +8,7 @@
             console.log(e.propertyName);
             if(e.propertyName.includes('flex-grow')){
                 this.classList.toggle('open-active');
+                console.log("completed");
             }
         }
 
