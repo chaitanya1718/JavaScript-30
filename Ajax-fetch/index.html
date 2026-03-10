@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <input type="text" class="search" placeholder="search city/state">
+    <div class="suggestions">
+        search Results
+    </div>
+    <style>
+        .place-details{
+            background-color: antiquewhite;
+            padding:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .search{
+            padding:20px 10px;
+            font-size: xx-large;
+            border-radius:10px;
+        }
+        .highlight{
+            color:rgb(255, 0, 0);
+        }
+        .suggestions{
+            border:solid black 2px;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            gap:4px;
+
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+</body>
+</html>
