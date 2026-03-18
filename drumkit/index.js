@@ -17,3 +17,4 @@ function removeTransition(e){
     this.classList.remove('playing');
 
 }
+console.log("reached at end");
