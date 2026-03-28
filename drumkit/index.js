@@ -1,5 +1,5 @@
 console.log("started the program");
-console.log("program");
+
 window.addEventListener("keydown", (e) => {
     const audio = document.querySelector(`audio[data-key="${e.key}"]`);
     const key = document.querySelector(`.key[data-key="${e.key}"]`);
