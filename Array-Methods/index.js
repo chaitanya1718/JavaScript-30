@@ -33,7 +33,7 @@ const filtered1500 = inventors.filter(function (inventor) {
 const filtered = inventors.filter((inv) => inv.year >= 1500 && inv.year < 1600);
 
 console.log(filtered);
-
+console.log("added new methods");
 
 // ⚠️ map
 // return array with first and last name of users
