@@ -1,5 +1,5 @@
 
-console.log("updated");
+
 const panels=document.querySelectorAll('.panel');
 
         function toggleOpen(){
