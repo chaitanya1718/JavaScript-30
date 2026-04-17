@@ -1,4 +1,4 @@
-console.log("index js working");
+
 console.log("started ");
 const { app, BrowserWindow } = require("electron");
 
