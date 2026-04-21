@@ -1,5 +1,4 @@
 
-console.log("started ");
 const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
