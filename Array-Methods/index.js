@@ -8,6 +8,7 @@ const inventors = [
   { name: "albert", last: "einstein", year: "1800",passed:"1874" },
   { name: "rogers", last: "beige", year: "1900" ,passed:"1980"},
 ];
+console.log("started the script");
 
 const people = [
   "chay, g",
