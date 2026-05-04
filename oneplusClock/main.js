@@ -1,4 +1,4 @@
-
+console.log("");
 const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
