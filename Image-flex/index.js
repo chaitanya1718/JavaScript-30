@@ -1,4 +1,4 @@
-console.log("");
+
 const panels=document.querySelectorAll('.panel');
 
         function toggleOpen(){
