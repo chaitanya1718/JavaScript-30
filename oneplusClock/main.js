@@ -19,7 +19,7 @@ function createWindow() {
 
   win.loadFile("index.html");
 
-  // 🔥 Auto resize to actual content size
+  // resize to actual content size
 win.webContents.on("did-finish-load", () => {
   win.webContents.executeJavaScript(`
     const rect = document.body.getBoundingClientRect();
